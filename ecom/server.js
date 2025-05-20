@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/ecommerce', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://kannasri141:kanna2006@cluste00.49upwsc.mongodb.net/?retryWrites=true&w=majority&appName=Cluste00', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
